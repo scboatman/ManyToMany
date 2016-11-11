@@ -1,0 +1,23 @@
+<table class="table table-bordered table-striped">
+    <thread>
+        <tr>
+            <th>Movies</th>
+            <th>Actions</th>
+
+        </tr>
+    </thread>
+
+
+    <tbody>
+        <tr ng-repeat="movie in controller.movies">
+            <td>{{movie.title}}</td>
+         
+
+            <td>
+                <a href="/addActorToMovie/{{movie.id}}" class="btn btn-primary">Add An Actor</a>
+            </td>   
+        </tr>
+
+</tbody>
+</table>
+
